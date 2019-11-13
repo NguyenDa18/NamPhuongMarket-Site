@@ -8,7 +8,6 @@
     "@material-ui/styles": "^4.4.3",
     "prop-types": "^15.7.2",
     "react": "^16.10.1",
-    "react-bnb-gallery": "^1.1.7",
     "react-dom": "^16.10.1",
     "react-iframe": "^1.8.0",
     "react-medium-zoom": "^1.0.0",

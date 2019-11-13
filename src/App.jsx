@@ -4,12 +4,9 @@ import withRoot from './modules/withRoot';
 
 
 // components
-import Gallery from './modules/views/Gallery';
 import PhotoGallery from './modules/views/PhotoGallery';
 
 import Footer from './modules/components/Footer';
-
-import RecipeReviewCard from './RecipeReviewCard';
 import Testimonials from './modules/views/Testimonials'
 
 // context
@@ -17,7 +14,6 @@ import About from './About';
 
 import AppNavbar from './modules/components/AppNavbar';
 import HeroImage from './modules/components/HeroImage';
-
 
 const App = () => (
   <div className="App">

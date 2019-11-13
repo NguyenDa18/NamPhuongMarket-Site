@@ -5,37 +5,30 @@ import Container from '@material-ui/core/Container';
 import CircularProgress from '@material-ui/core/CircularProgress';
 import Iframe from 'react-iframe'
 
+import List from '@material-ui/core/List';
+import ListItem from '@material-ui/core/ListItem';
+import Avatar from '@material-ui/core/Avatar';
+import ListItemText from '@material-ui/core/ListItemText';
+import Divider from '@material-ui/core/Divider';
+import AccessTimeIcon from '@material-ui/icons/AccessTime'
+import PhoneIcon from '@material-ui/icons/Phone'
+import ShoppingCartIcon from '@material-ui/icons/ShoppingCart'
+import CreditCardIcon from '@material-ui/icons/CreditCard'
+import ListItemAvatar from '@material-ui/core/ListItemAvatar';
+
 const GridItem = lazy(() => import('./modules/GridItem'))
 
 const useStyles = makeStyles((theme) => ({
-  icon: {
-    marginRight: theme.spacing(2),
+  infoList: {
+    width: '100%',
+    maxWidth: 580,
+    backgroundColor: theme.palette.background.paper,
+  },
+  infoIcon: {
+    backgroundColor: theme.palette.primary.main
   },
   heroContent: {
-    // backgroundColor: theme.palette.background.paper,
     padding: theme.spacing(8, 0, 6),
-  },
-  heroButtons: {
-    marginTop: theme.spacing(4),
-  },
-  cardGrid: {
-    paddingTop: theme.spacing(8),
-    paddingBottom: theme.spacing(8),
-  },
-  card: {
-    height: '100%',
-    display: 'flex',
-    flexDirection: 'column',
-  },
-  cardMedia: {
-    paddingTop: '56.25%', // 16:9
-  },
-  cardContent: {
-    flexGrow: 1,
-  },
-  footer: {
-    // backgroundColor: theme.palette.background.paper,
-    padding: theme.spacing(6),
   },
 }));
 
@@ -50,6 +43,43 @@ export default function About() {
     <>
       <main>
         <div className={classes.heroContent}>
+          <Container maxWidth="xs">
+            <List className={classes.infoList}>
+              <ListItem>
+                <ListItemAvatar>
+                  <Avatar className={classes.infoIcon}>
+                    <AccessTimeIcon />
+                  </Avatar>
+                </ListItemAvatar>
+                <ListItemText primary="Open Everyday" secondary="10 : 30 AM - 6 : 00 PM" />
+              </ListItem>
+              <ListItem>
+                <ListItemAvatar>
+                  <Avatar className={classes.infoIcon}>
+                    <PhoneIcon />
+                  </Avatar>
+                </ListItemAvatar>
+                <ListItemText primary="Phone Number" secondary="(503) 284 - 3549" />
+              </ListItem>
+              <ListItem>
+                <ListItemAvatar>
+                  <Avatar className={classes.infoIcon}>
+                    <ShoppingCartIcon />
+                  </Avatar>
+                </ListItemAvatar>
+                <ListItemText primary="Address" secondary="6834 NE Sandy Blvd. Portland, OR 97213" />
+              </ListItem>
+              <ListItem>
+                <ListItemAvatar>
+                  <Avatar className={classes.infoIcon}>
+                    <CreditCardIcon />
+                  </Avatar>
+                </ListItemAvatar>
+                <ListItemText primary="Accepted" secondary="EBT, Credit (except Discover), Debit" />
+              </ListItem>
+            </List>
+            <Divider />
+        </Container>
           <Container maxWidth="sm">
             <h1>About Us</h1>
           </Container>
@@ -65,9 +95,6 @@ export default function About() {
             </Typography>
             <Typography variant="h5" align="center" color="textSecondary" paragraph>
                 Friendly service and fast checkout
-            </Typography>
-            <Typography variant="h5" align="center" color="textSecondary" paragraph>
-                Foot stamps, credit (except Discover), debit accepted
             </Typography>
             <Typography variant="h5" align="center" paragraph>
             We're a small family operated market serving your needs for Asian meats, vegetables, and goods. The owner, Phat Nguyen, started it after quitting his previous job to spend more time with his family. We are committed to providing the best services for our customers. We are now one of the longest lasting Asian markets in Portland, OR because of our dedication and determination.

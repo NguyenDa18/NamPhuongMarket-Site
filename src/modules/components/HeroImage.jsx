@@ -26,7 +26,7 @@ const HeroImage = () => {
             <Grid container spacing={3} justify="center">
               <Grid item>
                 <Button variant="contained" color="secondary">
-                <a style={{ textDecoration: 'none', color: 'black' }} href="tel:+15032843549"> Call Us : (503) 284 - 3549</a>
+                <a style={{ textDecoration: 'none', color: 'black' }} href="tel:+15032843549">Call Us Now</a>
                 </Button>
               </Grid>
               <Grid item>
