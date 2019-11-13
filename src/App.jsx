@@ -1,33 +1,10 @@
-import React from 'react';
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
-import withRoot from './modules/withRoot';
-
-
-// components
-import PhotoGallery from './modules/views/PhotoGallery';
-
-import Footer from './modules/components/Footer';
-import Testimonials from './modules/views/Testimonials'
-
-// context
-import About from './About';
-
-import AppNavbar from './modules/components/AppNavbar';
-import HeroImage from './modules/components/HeroImage';
+import React from 'react'
+import Root from './Root'
 
 const App = () => (
-  <div className="App">
-    <Router>
-      <AppNavbar />
-      <HeroImage />
-      <Switch>
-        <Route exact path="/" component={About} />
-        <Route exact path="/testimonials" component={Testimonials} />
-        <Route exact path="/gallery" component={PhotoGallery} />
-      </Switch>
-      <Footer />
-    </Router>
-  </div>
-);
+    <>
+        <Root />
+    </>
+)
 
-export default withRoot(App);
+export default App

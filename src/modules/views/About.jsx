@@ -16,7 +16,7 @@ import ShoppingCartIcon from '@material-ui/icons/ShoppingCart'
 import CreditCardIcon from '@material-ui/icons/CreditCard'
 import ListItemAvatar from '@material-ui/core/ListItemAvatar';
 
-const GridItem = lazy(() => import('./modules/GridItem'))
+const GridItem = lazy(() => import('../GridItem'))
 
 const useStyles = makeStyles((theme) => ({
   infoList: {

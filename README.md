@@ -1,4 +1,5 @@
 # Nam Phuong Market Site
+[![Netlify Status](https://api.netlify.com/api/v1/badges/f5cd721a-9396-429d-9d1d-12864f527cfe/deploy-status)](https://app.netlify.com/sites/namphuongmkt/deploys)
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
