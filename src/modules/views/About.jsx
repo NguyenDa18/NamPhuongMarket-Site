@@ -22,7 +22,7 @@ const useStyles = makeStyles((theme) => ({
   infoList: {
     width: '100%',
     maxWidth: 580,
-    backgroundColor: theme.palette.background.paper,
+    backgroundColor: theme.palette.background.default,
   },
   infoIcon: {
     backgroundColor: theme.palette.primary.main
@@ -78,10 +78,10 @@ export default function About() {
                 <ListItemText primary="Accepted" secondary="EBT, Credit (except Discover), Debit" />
               </ListItem>
             </List>
-            <Divider />
         </Container>
-          <Container maxWidth="sm">
-            <h1>About Us</h1>
+        <Divider variant="middle" />
+          <Container maxWidth="sm" style={{ paddingTop: '50px' }}>
+            <Typography variant="h5">About Us</Typography>
           </Container>
           <Container maxWidth="sm">
             <Typography variant="h4" align="center" color="textPrimary" gutterBottom>

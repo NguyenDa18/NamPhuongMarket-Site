@@ -35,6 +35,11 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
+const navbarItems = {
+  'Grocery': '/gallery',
+  'Fridge Products': '/fridgegallery'
+}
+
 const AppNavbar = () => {
   const [open, setOpen] = useState(false);
   const classes = useStyles();
@@ -61,11 +66,11 @@ const AppNavbar = () => {
         <ListItem>
         <Typography style={{ color: 'white' }} variant="h6">Photos</Typography>
         </ListItem>
-        {['Grocery', 'Fresh Veggies', 'Meat Deli'].map((text, index) => (
-          <ListItem button key={text}>
+        {Object.keys(navbarItems).map((item, index) => (
+          <ListItem key={index} button>
             <ListItemIcon><PhotoSizeSelectActualIcon /></ListItemIcon>
-            <Link href="/gallery" variant="h5" color="inherit" style={{ textDecoration: 'none' }} noWrap>
-              {text}
+            <Link href={navbarItems[item]} variant="h5" color="inherit" style={{ textDecoration: 'none' }} noWrap>
+              {item}
             </Link>
           </ListItem>
         ))}

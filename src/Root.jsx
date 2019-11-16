@@ -6,6 +6,7 @@ import withRoot from './modules/withRoot';
 // components
 import About from './modules/views/About';
 import PhotoGallery from './modules/views/PhotoGallery';
+import FridgeProductsGallery from './modules/views/FridgeProductsGallery'
 
 import Footer from './modules/components/Footer';
 import Testimonials from './modules/views/Testimonials'
@@ -22,6 +23,7 @@ const Root = () => (
         <Route exact path="/" component={About} />
         <Route exact path="/testimonials" component={Testimonials} />
         <Route exact path="/gallery" component={PhotoGallery} />
+        <Route exact path="/fridgegallery" component={FridgeProductsGallery} />
       </Switch>
       <Footer />
     </Router>
