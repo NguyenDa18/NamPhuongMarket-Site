@@ -15,6 +15,13 @@ import StarIcon from '@material-ui/icons/Star'
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 import MoreVertIcon from '@material-ui/icons/MoreVert';
 
+import Paper from '@material-ui/core/Paper';
+import Tabs from '@material-ui/core/Tabs';
+import Tab from '@material-ui/core/Tab';
+import PhoneIcon from '@material-ui/icons/Phone';
+import FavoriteIcon from '@material-ui/icons/Favorite';
+import PersonPinIcon from '@material-ui/icons/PersonPin';
+
 import googleReviews from '../../data/googleReviews'
 
 const useStyles = makeStyles((theme) => ({
@@ -39,11 +46,11 @@ const useStyles = makeStyles((theme) => ({
 
 export default function Testimonials() {
   const classes = useStyles();
-  // const [expanded, setExpanded] = React.useState(false);
+  const [expanded, setExpanded] = React.useState(0);
 
-  // const handleExpandClick = () => {
-  //   setExpanded(!expanded);
-  // };
+  const handleExpandClick = (e, newValue) => {
+    setExpanded(newValue);
+  };
 
   const authorName = (name) => {
     const abv = name.split(" ").map(part => {
@@ -58,6 +65,20 @@ export default function Testimonials() {
 
   return (
       <Container>
+            <Paper square className={classes.root}>
+              <Tabs
+                value={expanded}
+                onChange={handleExpandClick}
+                variant="fullWidth"
+                indicatorColor="secondary"
+                textColor="secondary"
+                aria-label="icon label tabs example"
+              >
+                <Tab icon={<PhoneIcon />} label="GOOGLE" />
+                <Tab icon={<FavoriteIcon />} label="FACEBOOK" />
+                <Tab icon={<PersonPinIcon />} label="YELP" />
+              </Tabs>
+            </Paper>
           {
               googleReviews.map((review, i) => (
                   <>
@@ -81,32 +102,13 @@ export default function Testimonials() {
                             {review.text}
                         </Typography>
                     </CardContent>
-                    {/* <CardActions disableSpacing>
-                        <IconButton aria-label="add to favorites">
-                        {renderStars(review.stars)}
-                        </IconButton>
-                        <IconButton
-                        className={classes.expandOpen}
-                        onClick={handleExpandClick}
-                        aria-expanded={expanded}
-                        aria-label="show more"
-                        >
-                        <ExpandMoreIcon />
-                        </IconButton>
-                    </CardActions>
-                    <Collapse in={expanded} timeout="auto" unmountOnExit>
-                        <CardContent>
-                        <Typography paragraph>Method:</Typography>
-                        <Typography paragraph>
-                            Heat 1/2 cup of the broth in a pot until simmering, add saffron and set aside for 10
-                            minutes.
-                        </Typography>
-                        </CardContent>
-                    </Collapse> */}
                 </Card>
                   </>
               ))
           }
+
+
+          
     </Container>
   );
 }
