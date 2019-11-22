@@ -2,6 +2,8 @@ import React from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import withRoot from './modules/withRoot';
 
+import theme from './modules/theme'
+import { ThemeProvider } from '@material-ui/styles'
 
 // components
 import About from './modules/views/About';
@@ -15,6 +17,7 @@ import AppNavbar from './modules/components/AppNavbar';
 import HeroImage from './modules/components/HeroImage';
 
 const App = () => (
+  <ThemeProvider theme={theme}>
   <div className="App">
     <Router>
       <AppNavbar />
@@ -28,6 +31,7 @@ const App = () => (
       <Footer />
     </Router>
   </div>
+  </ThemeProvider>
 );
 
 export default App;
