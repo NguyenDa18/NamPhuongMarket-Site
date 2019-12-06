@@ -23,7 +23,7 @@ const useStyles = makeStyles((theme) => ({
   },
   list: {
     width: 'auto',
-    backgroundColor: theme.palette.primary.main,
+    backgroundColor: '#0d47a1',
     color: 'white',
   },
   menuButton: {
@@ -83,7 +83,7 @@ const AppNavbar = () => {
 
   return (
     <div className={classes.root}>
-      <AppBar position="fixed">
+      <AppBar color="primary" position="fixed">
         <Toolbar>
           <IconButton edge="start" className={classes.menuButton} color="inherit" aria-label="menu" onClick={(e) => toggleDrawer()}>
             <MenuIcon />

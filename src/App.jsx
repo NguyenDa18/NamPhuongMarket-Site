@@ -18,22 +18,22 @@ import AppNavbar from './modules/components/AppNavbar';
 import HeroImage from './modules/components/HeroImage';
 
 const App = () => (
-  <ThemeProvider theme={theme}>
-  <div className="App">
-    <Router>
-      <AppNavbar />
-      <HeroImage />
-      <Switch>
-        <Route exact path="/" component={About} />
-        <Route exact path="/testimonials" component={Testimonials} />
-        <Route exact path="/grocery" component={PhotoGallery} />
-        <Route exact path="/vegetablesgallery" component={VegGallery} />
-        <Route exact path="/fridgegallery" component={FridgeProductsGallery} />
-      </Switch>
-      <Footer />
-    </Router>
-  </div>
-  </ThemeProvider>
+    <ThemeProvider theme={theme}>
+      <div className="App">
+        <Router>
+          <AppNavbar />
+          <HeroImage />
+          <Switch>
+            <Route exact path="/" component={About} />
+            <Route exact path="/testimonials" component={Testimonials} />
+            <Route exact path="/grocery" component={PhotoGallery} />
+            <Route exact path="/vegetablesgallery" component={VegGallery} />
+            <Route exact path="/fridgegallery" component={FridgeProductsGallery} />
+          </Switch>
+          <Footer />
+        </Router>
+      </div>
+    </ThemeProvider>
 );
 
 export default App;
