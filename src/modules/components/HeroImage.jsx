@@ -11,8 +11,14 @@ const useStyles = makeStyles((theme) => ({
   heroButtons: {
     padding: theme.spacing(2, 0, 0),
   },
-  secondaryButton: {
-    backgroundColor: theme.palette.secondary.dark
+  photoButton: {
+    backgroundColor: '#ffc107'
+  },
+  fbButton: {
+    color: '#0d47a1'
+  },
+  yelpButton: {
+    backgroundColor: '#e62958'
   }
  }));
 
@@ -25,17 +31,17 @@ const HeroImage = () => {
            <div className={classes.heroButtons}>
             <Grid container spacing={3} justify="center">
               <Grid item>
-                <Button variant="contained" color="secondary">
+                <Button variant="contained" className={classes.photoButton}>
                 <a style={{ textDecoration: 'none', color: 'black' }} href="tel:+15032843549">Call Us Now</a>
                 </Button>
               </Grid>
               <Grid item>
-                <Button variant="outlined" color="primary">
+                <Button variant="outlined" className={classes.fbButton}>
                   <Link style={{ textDecoration: 'none' }} href="https://www.facebook.com/namphuongmkt/">Like Us On Facebook</Link>
                 </Button>
               </Grid>
               <Grid item>
-                <Button variant="contained" className={classes.secondaryButton}>
+                <Button variant="contained" className={classes.yelpButton}>
                   <Link style={{ textDecoration: 'none', color: 'white' }} href="https://www.yelp.com/biz/nam-phuong-market-portland">Review Us On Yelp</Link>
                 </Button>
               </Grid>

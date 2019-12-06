@@ -18,7 +18,6 @@ import AppNavbar from './modules/components/AppNavbar';
 import HeroImage from './modules/components/HeroImage';
 
 const App = () => (
-    <ThemeProvider theme={theme}>
       <div className="App">
         <Router>
           <AppNavbar />
@@ -33,7 +32,6 @@ const App = () => (
           <Footer />
         </Router>
       </div>
-    </ThemeProvider>
 );
 
 export default App;

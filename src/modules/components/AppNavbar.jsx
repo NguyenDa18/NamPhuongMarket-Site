@@ -29,6 +29,9 @@ const useStyles = makeStyles((theme) => ({
   menuButton: {
     marginRight: theme.spacing(2),
   },
+  navbar: {
+    backgroundColor: '#0d47a1'
+  },
   title: {
     flexGrow: 1,
     textDecoration: 'none'
@@ -83,7 +86,7 @@ const AppNavbar = () => {
 
   return (
     <div className={classes.root}>
-      <AppBar color="primary" position="fixed">
+      <AppBar className={classes.navbar} position="fixed">
         <Toolbar>
           <IconButton edge="start" className={classes.menuButton} color="inherit" aria-label="menu" onClick={(e) => toggleDrawer()}>
             <MenuIcon />
