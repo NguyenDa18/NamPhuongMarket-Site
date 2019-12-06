@@ -36,7 +36,7 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 const navbarItems = {
-  'Grocery': '/gallery',
+  'Grocery': '/grocery',
   'Fridge Products': '/fridgegallery',
   'Fresh Vegetables': '/vegetablesgallery'
 }

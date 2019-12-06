@@ -21,14 +21,13 @@ const GridItem = lazy(() => import('../GridItem'))
 const useStyles = makeStyles((theme) => ({
   infoList: {
     width: '100%',
-    maxWidth: 580,
-    backgroundColor: theme.palette.background.default,
+    maxWidth: 580
   },
   infoIcon: {
     backgroundColor: theme.palette.primary.main
   },
   heroContent: {
-    padding: theme.spacing(8, 0, 6),
+    padding: theme.spacing(2, 0, 5),
   },
 }));
 
@@ -43,7 +42,7 @@ export default function About() {
     <>
       <main>
         <div className={classes.heroContent}>
-          <Container maxWidth="xs">
+          <Container maxWidth="sm">
             <List className={classes.infoList}>
               <ListItem>
                 <ListItemAvatar>
@@ -81,23 +80,26 @@ export default function About() {
         </Container>
         <Divider variant="middle" />
           <Container maxWidth="sm" style={{ paddingTop: '50px' }}>
-            <Typography variant="h5">About Us</Typography>
+            <Typography variant="h5" >About Us</Typography>
           </Container>
-          <Container maxWidth="sm">
+          <Container maxWidth="md">
             <Typography variant="h4" align="center" color="textPrimary" gutterBottom>
               Established Since 1995
             </Typography>
             <Typography variant="h5" align="center" color="textSecondary" paragraph>
-                Vietnamese, Japanese, Chinese, and Korean goods
+                Impressive bargain prices
             </Typography>
             <Typography variant="h5" align="center" color="textSecondary" paragraph>
-                Meat Deli and Fresh Vegetables
+                Vietnamese, Japanese, Chinese, and Korean quality goods
+            </Typography>
+            <Typography variant="h5" align="center" color="textSecondary" paragraph>
+                Meat deli and fresh vegetables
             </Typography>
             <Typography variant="h5" align="center" color="textSecondary" paragraph>
                 Friendly service and fast checkout
             </Typography>
             <Typography variant="h5" align="center" paragraph>
-            We're a small family operated market serving your needs for Asian meats, vegetables, and goods. The owner, Phat Nguyen, started it after quitting his previous job to spend more time with his family. We are committed to providing the best services for our customers. We are now one of the longest lasting Asian markets in Portland, OR because of our dedication and determination.
+            We're a small family operated market serving your needs for Asian goods, vegetables, and deli meat. The owner, Phat Nguyen, started it after quitting his previous job to spend more time with his family. We are committed to providing the best services and value for our customers. We are now one of the longest lasting Asian markets in Portland, OR because of our dedication and determination.
             </Typography>
           </Container>
         </div>

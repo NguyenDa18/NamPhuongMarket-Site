@@ -9,7 +9,7 @@ import Link from '@material-ui/core/Link'
 
 const useStyles = makeStyles((theme) => ({
   heroButtons: {
-    padding: theme.spacing(2, 0, 2),
+    padding: theme.spacing(2, 0, 0),
   },
   secondaryButton: {
     backgroundColor: theme.palette.secondary.dark

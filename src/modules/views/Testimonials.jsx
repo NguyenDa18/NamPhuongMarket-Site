@@ -81,9 +81,9 @@ export default function Testimonials() {
             </Paper>
           {
               googleReviews.map((review, i) => (
-                  <>
-                <Card className={classes.card}>
+                <Card key={i} className={classes.card}>
                     <CardHeader
+                        key={i}
                         avatar={(
                         <Avatar aria-label="recipe" className={classes.avatar}>
                             {authorName(review.author)}
@@ -103,7 +103,6 @@ export default function Testimonials() {
                         </Typography>
                     </CardContent>
                 </Card>
-                  </>
               ))
           }
 

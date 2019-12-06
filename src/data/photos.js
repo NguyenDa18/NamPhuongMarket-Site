@@ -21,14 +21,7 @@ const photos = [{
   caption: 'Soup bowls and dishes',
 }, {
   photo: 'https://res.cloudinary.com/dnguyen/image/upload/v1570259673/namphuong/grocery/soysauces_ukue3c.jpg',
-  caption: 'Sauces on display',
-}, {
-  photo: 'https://res.cloudinary.com/dnguyen/image/upload/w_1000,ar_16:9,c_fill,g_auto,e_sharpen/v1567931473/namphuong/veggies/veg1_ezfz3c.jpg',
-  caption: 'Veggies on display',
-}, {
-  photo: 'https://res.cloudinary.com/dnguyen/image/upload/w_1000,ar_16:9,c_fill,g_auto,e_sharpen/v1567932912/namphuong/veggies/veg4_nxvawy.jpg',
-  caption: 'Veggies on display',
-
+  caption: 'Variety of soy sauces',
 }];
 
 export default photos;
