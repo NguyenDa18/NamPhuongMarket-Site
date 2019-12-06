@@ -1,15 +1,31 @@
 [
     {
-      "photo": "https://res.cloudinary.com/dnguyen/image/upload/v1567931473/namphuong/veggies/veg1_ezfz3c.jpg",
+      "photo": "https://res.cloudinary.com/dnguyen/image/upload/q_50/v1567931473/namphuong/veggies/veg1_ezfz3c.jpg",
       "caption": "Green onions and cilantro"
     },
     {
-      "photo": "https://res.cloudinary.com/dnguyen/image/upload/v1567932912/namphuong/veggies/veg4_nxvawy.jpg",
+      "photo": "https://res.cloudinary.com/dnguyen/image/upload/q_50/v1567932912/namphuong/veggies/veg4_nxvawy.jpg",
       "caption": "Tomatoes, limes, mushrooms, and chives"
     },
     {
-      "photo": "https://res.cloudinary.com/dnguyen/image/upload/v1567933030/namphuong/veggies/veg3_yakerh.jpg",
+      "photo": "https://res.cloudinary.com/dnguyen/image/upload/q_50/v1567933030/namphuong/veggies/veg3_yakerh.jpg",
       "caption": "Fresh herbs"
+    },
+    {
+      "photo": "https://res.cloudinary.com/dnguyen/image/upload/q_50/v1570261270/namphuong/veggies/veggies1_bhpvg5.jpg",
+      "caption": "Veggies"
+    },
+    {
+      "photo": "https://res.cloudinary.com/dnguyen/image/upload/q_50/v1570261351/namphuong/veggies/veggies2_u0poie.jpg",
+      "caption": "Carrots, cabbage"
+    },
+    {
+      "photo": "https://res.cloudinary.com/dnguyen/image/upload/q_50/v1570261469/namphuong/veggies/veggies3_qfnkgj.jpg",
+      "caption": "Shredded carrots, papaya, and mushrooms"
+    },
+    {
+      "photo": "https://res.cloudinary.com/dnguyen/image/upload/q_50/v1570261578/namphuong/veggies/veggies4_krhpwm.jpg",
+      "caption": "Beansprouts and pickles"
     }
 ]
 

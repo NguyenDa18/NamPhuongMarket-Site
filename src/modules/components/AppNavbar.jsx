@@ -40,8 +40,8 @@ const useStyles = makeStyles((theme) => ({
 
 const navbarItems = {
   'Grocery': '/grocery',
-  'Fridge Products': '/fridgegallery',
-  'Fresh Vegetables': '/vegetablesgallery'
+  'Fresh Vegetables': '/vegetablesgallery',
+  'Fridge Products': '/fridgegallery'
 }
 
 const AppNavbar = () => {
@@ -56,7 +56,7 @@ const AppNavbar = () => {
       onKeyDown={(e) => setOpen(false)}
     >
       <List>
-        {['Testimonials', 'Starred'].map((text, index) => (
+        {['Testimonials'].map((text, index) => (
           <ListItem button key={text}>
             <ListItemIcon>{index % 2 === 0 ? <InboxIcon /> : <MailIcon />}</ListItemIcon>
             <Link href="/testimonials" variant="h5" color="inherit" style={{ textDecoration: 'none' }} noWrap>

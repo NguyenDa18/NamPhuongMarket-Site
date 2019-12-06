@@ -47,7 +47,7 @@ const ImageGallery = ({ photos, title }) => {
           <Grid container spacing={4}>
             {
                 photos.map((photo, i) => (
-                <Grid key={i} item xs={12} sm={6} md={4}>
+                <Grid key={i} item xs={12} sm={6} md={3}>
                   <Card key={i} className={classes.card}>
                     <ReactMediumImg key={i} style={{ width: '100%' }} src={photo.photo} />
                     <CardContent className={classes.cardContent}>
