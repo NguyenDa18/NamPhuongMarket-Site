@@ -37,7 +37,8 @@ const useStyles = makeStyles((theme) => ({
 
 const navbarItems = {
   'Grocery': '/gallery',
-  'Fridge Products': '/fridgegallery'
+  'Fridge Products': '/fridgegallery',
+  'Fresh Vegetables': '/vegetablesgallery'
 }
 
 const AppNavbar = () => {

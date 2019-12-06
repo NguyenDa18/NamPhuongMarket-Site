@@ -18,7 +18,7 @@ const photos = [{
 },
 {
   photo: 'https://res.cloudinary.com/dnguyen/image/upload/v1567926740/namphuong/grocery/bowls_gziwxm.jpg',
-  caption: 'Bowls on display',
+  caption: 'Soup bowls and dishes',
 }, {
   photo: 'https://res.cloudinary.com/dnguyen/image/upload/v1570259673/namphuong/grocery/soysauces_ukue3c.jpg',
   caption: 'Sauces on display',
