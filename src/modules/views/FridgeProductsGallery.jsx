@@ -1,5 +1,5 @@
 import React from 'react';
-import photos from '../../data/meatPhotos.json'
+import photos from '../../data/fridgePhotos.json'
 import ImageGallery from '../components/ImageGallery'
 
 
