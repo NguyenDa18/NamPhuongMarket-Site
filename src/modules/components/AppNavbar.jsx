@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import AppBar from '@material-ui/core/AppBar';
+import Fab from '@material-ui/core/Fab';
+import NavigationIcon from '@material-ui/icons/Navigation';
 import Link from '@material-ui/core/Link';
 import Toolbar from '@material-ui/core/Toolbar';
 import IconButton from '@material-ui/core/IconButton';
@@ -92,6 +94,10 @@ const AppNavbar = () => {
           <Link href="/" variant="h5" color="inherit" className={classes.title} noWrap>
             Nam Phuong Market
           </Link>
+            <Fab variant="extended" onClick={e => window.scrollTo({ top: 0, behavior: 'smooth' })}>
+              <NavigationIcon />
+              Top
+            </Fab>
         </Toolbar>
       </AppBar>
       <Drawer anchor="bottom" open={open} onClose={(e) => setOpen(false)}>

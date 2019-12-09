@@ -35,12 +35,12 @@ const HeroImage = () => {
               </Grid>
               <Grid item>
                 <Button variant="outlined" className={classes.fbButton}>
-                  <Link style={{ textDecoration: 'none' }} href="https://www.facebook.com/namphuongmkt/">Like Us On Facebook</Link>
+                  <Link style={{ textDecoration: 'none' }} target="_blank" href="https://www.facebook.com/namphuongmkt/">Like Us On Facebook</Link>
                 </Button>
               </Grid>
               <Grid item>
                 <Button variant="contained" className={classes.yelpButton}>
-                  <Link style={{ textDecoration: 'none', color: 'white' }} href="https://www.yelp.com/biz/nam-phuong-market-portland">Review Us On Yelp</Link>
+                  <Link style={{ textDecoration: 'none', color: 'white' }} target="_blank" href="https://www.yelp.com/biz/nam-phuong-market-portland">Review Us On Yelp</Link>
                 </Button>
               </Grid>
             </Grid>
