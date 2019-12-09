@@ -91,7 +91,7 @@ const AppNavbar = () => {
           <IconButton edge="start" className={classes.menuButton} color="inherit" aria-label="menu" onClick={(e) => toggleDrawer()}>
             <MenuIcon />
           </IconButton>
-          <Link href="/" variant="h5" color="inherit" className={classes.title} noWrap>
+          <Link href="/" variant="h5" color="inherit" className={classes.title}>
             Nam Phuong Market
           </Link>
             <Fab variant="extended" onClick={e => window.scrollTo({ top: 0, behavior: 'smooth' })}>
