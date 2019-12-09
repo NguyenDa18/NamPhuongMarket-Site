@@ -5,7 +5,6 @@ import Card from '@material-ui/core/Card';
 import CardHeader from '@material-ui/core/CardHeader';
 import CardContent from '@material-ui/core/CardContent';
 import Avatar from '@material-ui/core/Avatar';
-import IconButton from '@material-ui/core/IconButton';
 import Typography from '@material-ui/core/Typography';
 import { red } from '@material-ui/core/colors';
 import Paper from '@material-ui/core/Paper';
@@ -13,7 +12,6 @@ import Tabs from '@material-ui/core/Tabs';
 import Tab from '@material-ui/core/Tab';
 import StarIcon from '@material-ui/icons/Star'
 import SearchIcon from '@material-ui/icons/Search'
-import MoreVertIcon from '@material-ui/icons/MoreVert';
 import ChatIcon from '@material-ui/icons/Chat'
 import ThumbUpIcon from '@material-ui/icons/ThumbUp'
 
@@ -98,11 +96,6 @@ export default function Testimonials() {
                         <Avatar aria-label="recipe" className={classes.avatar}>
                             {authorName(review.author)}
                         </Avatar>
-                        )}
-                        action={(
-                        <IconButton aria-label="settings">
-                            <MoreVertIcon />
-                        </IconButton>
                         )}
                         title={review.author}
                         subheader={renderStars(review.stars)}
