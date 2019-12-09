@@ -1,28 +1,25 @@
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import Container from '@material-ui/core/Container';
-import Grid from '@material-ui/core/Grid';
 import Card from '@material-ui/core/Card';
 import CardHeader from '@material-ui/core/CardHeader';
 import CardContent from '@material-ui/core/CardContent';
-import CardActions from '@material-ui/core/CardActions';
-import Collapse from '@material-ui/core/Collapse';
 import Avatar from '@material-ui/core/Avatar';
 import IconButton from '@material-ui/core/IconButton';
 import Typography from '@material-ui/core/Typography';
 import { red } from '@material-ui/core/colors';
-import StarIcon from '@material-ui/icons/Star'
-import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
-import MoreVertIcon from '@material-ui/icons/MoreVert';
-
 import Paper from '@material-ui/core/Paper';
 import Tabs from '@material-ui/core/Tabs';
 import Tab from '@material-ui/core/Tab';
-import PhoneIcon from '@material-ui/icons/Phone';
-import FavoriteIcon from '@material-ui/icons/Favorite';
-import PersonPinIcon from '@material-ui/icons/PersonPin';
+import StarIcon from '@material-ui/icons/Star'
+import SearchIcon from '@material-ui/icons/Search'
+import MoreVertIcon from '@material-ui/icons/MoreVert';
+import ChatIcon from '@material-ui/icons/Chat'
+import ThumbUpIcon from '@material-ui/icons/ThumbUp'
 
-import googleReviews from '../../data/googleReviews'
+import googleReviews from '../../data/googleReviews.json'
+import facebookReviews from '../../data/facebookReviews.json'
+import yelpReviews from '../../data/yelpReviews.json'
 
 const useStyles = makeStyles((theme) => ({
   media: {
@@ -59,8 +56,21 @@ export default function Testimonials() {
       return abv
   }
 
-  const renderStars = (stars) => {
-  [...Array(stars).keys()].map(star => <StarIcon />)
+  const renderStars = (stars) => [...Array(stars).keys()].map(star => <StarIcon />)
+
+  let reviewData
+  switch (expanded) {
+    case 0:
+      reviewData = googleReviews
+      break;
+    case 1:
+      reviewData = facebookReviews
+      break;
+    case 2:
+      reviewData = yelpReviews
+      break;
+    default:
+      reviewData = googleReviews
   }
 
   return (
@@ -74,13 +84,13 @@ export default function Testimonials() {
                 textColor="secondary"
                 aria-label="icon label tabs example"
               >
-                <Tab icon={<PhoneIcon />} label="GOOGLE" />
-                <Tab icon={<FavoriteIcon />} label="FACEBOOK" />
-                <Tab icon={<PersonPinIcon />} label="YELP" />
+                <Tab icon={<SearchIcon />} label="GOOGLE" />
+                <Tab icon={<ThumbUpIcon />} label="FACEBOOK" />
+                <Tab icon={<ChatIcon />} label="YELP" />
               </Tabs>
             </Paper>
           {
-              googleReviews.map((review, i) => (
+              reviewData.map((review, i) => (
                 <Card key={i} className={classes.card}>
                     <CardHeader
                         key={i}

@@ -1,9 +1,5 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
-import withRoot from './modules/withRoot';
-
-import theme from './modules/theme'
-import { ThemeProvider } from '@material-ui/styles'
 
 // components
 import About from './modules/views/About';

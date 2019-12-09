@@ -1,8 +1,7 @@
-import React, { Suspense, lazy } from 'react';
+import React from 'react';
 import Typography from '@material-ui/core/Typography';
 import { makeStyles } from '@material-ui/core/styles';
 import Container from '@material-ui/core/Container';
-import CircularProgress from '@material-ui/core/CircularProgress';
 import Iframe from 'react-iframe'
 
 import List from '@material-ui/core/List';
@@ -16,8 +15,6 @@ import ShoppingCartIcon from '@material-ui/icons/ShoppingCart'
 import CreditCardIcon from '@material-ui/icons/CreditCard'
 import ListItemAvatar from '@material-ui/core/ListItemAvatar';
 
-const GridItem = lazy(() => import('../GridItem'))
-
 const useStyles = makeStyles((theme) => ({
   infoList: {
     width: '100%',
@@ -30,10 +27,6 @@ const useStyles = makeStyles((theme) => ({
     padding: theme.spacing(2, 0, 5),
   },
 }));
-
-const loading = (
-<CircularProgress color="primary"/>
-);
 
 export default function About() {
   const classes = useStyles();

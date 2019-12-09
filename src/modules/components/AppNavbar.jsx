@@ -12,10 +12,8 @@ import List from '@material-ui/core/List';
 import Divider from '@material-ui/core/Divider';
 import ListItem from '@material-ui/core/ListItem';
 import ListItemIcon from '@material-ui/core/ListItemIcon';
-import ListItemText from '@material-ui/core/ListItemText';
-import InboxIcon from '@material-ui/icons/MoveToInbox';
-import MailIcon from '@material-ui/icons/Mail';
-import PhotoSizeSelectActualIcon from '@material-ui/icons/PhotoSizeSelectActual'
+import SentimentSatisfiedIcon from '@material-ui/icons/SentimentSatisfied'
+import PhotoIcon from '@material-ui/icons/Photo'
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -58,7 +56,7 @@ const AppNavbar = () => {
       <List>
         {['Testimonials'].map((text, index) => (
           <ListItem button key={text}>
-            <ListItemIcon>{index % 2 === 0 ? <InboxIcon /> : <MailIcon />}</ListItemIcon>
+            <ListItemIcon><SentimentSatisfiedIcon /></ListItemIcon>
             <Link href="/testimonials" variant="h5" color="inherit" style={{ textDecoration: 'none' }} noWrap>
               {text}
             </Link>
@@ -72,7 +70,7 @@ const AppNavbar = () => {
         </ListItem>
         {Object.keys(navbarItems).map((item, index) => (
           <ListItem key={index} button>
-            <ListItemIcon><PhotoSizeSelectActualIcon /></ListItemIcon>
+            <ListItemIcon><PhotoIcon /></ListItemIcon>
             <Link href={navbarItems[item]} variant="h5" color="inherit" style={{ textDecoration: 'none' }} noWrap>
               {item}
             </Link>
