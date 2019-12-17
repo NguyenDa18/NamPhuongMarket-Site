@@ -67,7 +67,7 @@ export default function About() {
                     <CreditCardIcon />
                   </Avatar>
                 </ListItemAvatar>
-                <ListItemText primary="Accepted" secondary="EBT, Credit (except Discover), Debit" />
+                <ListItemText primary="Accepted" secondary="EBT, Credit & Debit" />
               </ListItem>
             </List>
         </Container>
@@ -86,13 +86,16 @@ export default function About() {
                 Vietnamese, Japanese, Chinese, and Korean quality goods
             </Typography>
             <Typography variant="h5" align="center" color="textSecondary" paragraph>
-                Meat deli and fresh vegetables
+                Fresh meat and vegetable selection
+            </Typography>
+            <Typography variant="h5" align="center" color="textSecondary" paragraph>
+                Seafood and poultry selection
             </Typography>
             <Typography variant="h5" align="center" color="textSecondary" paragraph>
                 Friendly service and fast checkout
             </Typography>
             <Typography variant="h5" align="center" paragraph>
-            We're a small family operated market serving your needs for Asian goods, vegetables, and deli meat. The owner, Phat Nguyen, started it after quitting his previous job to spend more time with his family. We are committed to providing the best services and value for our customers. We are now one of the longest lasting Asian markets in Portland, OR because of our dedication and determination.
+            We're a small family operated market serving your needs for Asian goods, vegetables, meat, and seafood. The owner, Phat Nguyen, started it after quitting his previous job to spend more time with his family. We are committed to providing the best services and value for our customers. We are now one of the longest lasting Asian markets in Portland, OR because of our dedication and determination.
             </Typography>
           </Container>
         </div>
