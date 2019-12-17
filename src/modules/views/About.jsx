@@ -77,7 +77,7 @@ export default function About() {
           </Container>
           <Container maxWidth="md">
             <Typography variant="h4" align="center" color="textPrimary" gutterBottom>
-              Established Since 1995
+              Established Since 1997
             </Typography>
             <Typography variant="h5" align="center" color="textSecondary" paragraph>
                 Impressive bargain prices
