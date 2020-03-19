@@ -5,9 +5,7 @@ import Card from '@material-ui/core/Card';
 import CardContent from '@material-ui/core/CardContent';
 import Typography from '@material-ui/core/Typography';
 import { makeStyles } from '@material-ui/core/styles';
-import ReactMediumImg from 'react-medium-zoom';
 import Zoom from 'react-medium-image-zoom'
-import { LazyLoadImage } from 'react-lazy-load-image-component'
 import 'react-medium-image-zoom/dist/styles.css'
 
 const useStyles = makeStyles((theme) => ({
@@ -30,6 +28,11 @@ const useStyles = makeStyles((theme) => ({
   cardMedia: {
     paddingTop: '56.25%', // 16:9
   },
+
+  media: {
+    width: '100%'
+  },
+
   cardContent: {
     flexGrow: 1,
   },
@@ -53,9 +56,8 @@ const ImageGallery = ({ photos, title }) => {
                 <Grid key={i} item xs={12} sm={6} md={3}>
                   <Card key={i} className={classes.card}>
                     <Zoom key={i}>
-                      <LazyLoadImage effect="blur" style={{ width: '100% ' }} src={photo.photo} />
+                      <img className={classes.media} src={photo.photo} />
                     </Zoom>
-                    {/* <ReactMediumImg key={i} style={{ width: '100%' }} src={photo.photo} /> */}
                     <CardContent className={classes.cardContent}>
                       <Typography gutterBottom variant="h5" component="h2">
                       {photo.caption}

@@ -70,14 +70,24 @@ const AppNavbar = () => {
         <ListItem>
         <Typography style={{ color: 'white' }} variant="h6">Photos</Typography>
         </ListItem>
-        {Object.keys(navbarItems).map((item, index) => (
-          <ListItem key={index} button>
+        <ListItem button>
             <ListItemIcon><PhotoIcon /></ListItemIcon>
-            <Link href={navbarItems[item]} variant="h5" color="inherit" style={{ textDecoration: 'none' }} noWrap>
-              {item}
+            <Link href='/grocery' variant="h5" color="inherit" style={{ textDecoration: 'none' }} noWrap>
+              Grocery
             </Link>
-          </ListItem>
-        ))}
+        </ListItem>
+        <ListItem button>
+            <ListItemIcon><PhotoIcon /></ListItemIcon>
+            <Link href='/vegetablesgallery' variant="h5" color="inherit" style={{ textDecoration: 'none' }} noWrap>
+              Fresh Vegetables
+            </Link>
+        </ListItem>
+        <ListItem button>
+            <ListItemIcon><PhotoIcon /></ListItemIcon>
+            <Link href='/fridgegallery' variant="h5" color="inherit" style={{ textDecoration: 'none' }} noWrap>
+              Fridge Products
+            </Link>
+        </ListItem>
       </List>
     </div>
   );
