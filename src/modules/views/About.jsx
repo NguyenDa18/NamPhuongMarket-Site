@@ -4,6 +4,8 @@ import { makeStyles } from '@material-ui/core/styles';
 import Container from '@material-ui/core/Container';
 import Iframe from 'react-iframe'
 
+import AppAlert from '../components/AppAlert'
+import Chip from '@material-ui/core/Chip';
 import List from '@material-ui/core/List';
 import ListItem from '@material-ui/core/ListItem';
 import Avatar from '@material-ui/core/Avatar';
@@ -25,6 +27,18 @@ const useStyles = makeStyles((theme) => ({
   },
   heroContent: {
     padding: theme.spacing(2, 0, 5),
+  },
+  main: {
+    marginTop: theme.spacing(7),
+    marginBottom: theme.spacing(2),
+  },
+  chips: {
+    display: 'flex',
+    justifyContent: 'center',
+    flexWrap: 'wrap',
+    '& > *': {
+      margin: theme.spacing(0.5),
+    },
   },
 }));
 
@@ -72,33 +86,30 @@ export default function About() {
             </List>
         </Container>
         <Divider variant="middle" />
-          <Container maxWidth="sm" style={{ paddingTop: '50px' }}>
-            <Typography variant="h5" >About Us</Typography>
-          </Container>
-          <Container maxWidth="md">
-            <Typography variant="h4" align="center" color="primary" gutterBottom>
+        </div>
+        
+        <Container component="main" className={classes.main} maxWidth="sm">
+        <Typography variant="h2" component="h1" gutterBottom>
+          About Us
+        </Typography>
+        <div className={classes.chips}>
+              <Chip color="secondary" label="Impressive bargain prices" variant="outlined" />
+              <Chip color="primary" label="Vietnamese, Japanese, Chinese, and Korean quality goods" variant="outlined" />
+              <Chip color="secondary" label="Fresh meat and vegetable selection" variant="outlined" />
+              <Chip color="primary" label="Seafood and poultry selection" variant="outlined" />  
+              <Chip color="secondary" label="Friendly service and fast checkout" variant="outlined" />
+              <br />           
+        </div>
+        <div className={classes.main}>
+        <Typography variant="h4" align="center" color="primary" gutterBottom>
               Established Since 1997
-            </Typography>
-            <Typography variant="h5" align="center" color="textSecondary" paragraph>
-                Impressive bargain prices
-            </Typography>
-            <Typography variant="h5" align="center" color="textSecondary" paragraph>
-                Vietnamese, Japanese, Chinese, and Korean quality goods
-            </Typography>
-            <Typography variant="h5" align="center" color="textSecondary" paragraph>
-                Fresh meat and vegetable selection
-            </Typography>
-            <Typography variant="h5" align="center" color="textSecondary" paragraph>
-                Seafood and poultry selection
-            </Typography>
-            <Typography variant="h5" align="center" color="textSecondary" paragraph>
-                Friendly service and fast checkout
-            </Typography>
+        </Typography>
             <Typography variant="h5" align="center" paragraph>
             We're a small family operated market serving your needs for Asian goods, vegetables, meat, and seafood. The owner, Phat Nguyen, started it after quitting his previous job to spend more time with his family. We are committed to providing the best services and value for our customers. We are now one of the longest lasting Asian markets in Portland, OR because of our dedication and determination.
             </Typography>
-          </Container>
-        </div>
+      </div>
+      <AppAlert />
+      </Container>
         <>
           <Iframe url="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2794.180199746168!2d-122.594795249021!3d45.54670043585335!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5495a13632dafcb5%3A0xd7bdf78e08fe874c!2sNam%20Phuong%20Market!5e0!3m2!1sen!2sus!4v1567934431008!5m2!1sen!2sus" height="350" width="100%" />
         </>

@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 
 // components
 import About from './modules/views/About';
+import Contact from './modules/views/Contact'
 import PhotoGallery from './modules/views/PhotoGallery';
 import VegGallery from './modules/views/VegGallery'
 import FridgeProductsGallery from './modules/views/FridgeProductsGallery'
@@ -20,6 +21,7 @@ const App = () => (
           <HeroImage />
           <Switch>
             <Route exact path="/" component={About} />
+            {/* <Route exact path="/contact" component={Contact} /> */}
             <Route exact path="/testimonials" component={Testimonials} />
             <Route exact path="/grocery" component={PhotoGallery} />
             <Route exact path="/vegetablesgallery" component={VegGallery} />
