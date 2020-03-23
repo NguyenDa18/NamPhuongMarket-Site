@@ -9,8 +9,7 @@ const Copyright = () => (
     </Typography>
     <Typography variant="body2" color="textSecondary" align="center">
         Copyright © {new Date().getFullYear()} &nbsp; Website Design by &nbsp;
-
-      <Link color="inherit" href="https://www.linkedin.com/in/danh-nguyen-b4aa91a5">
+      <Link color="inherit" href="https://danh-was-here.netlify.com" target="_blank">
             Danh Nguyen &nbsp;
       </Link>
     </Typography>

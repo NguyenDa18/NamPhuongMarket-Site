@@ -7,6 +7,7 @@ import Link from '@material-ui/core/Link';
 import Toolbar from '@material-ui/core/Toolbar';
 import IconButton from '@material-ui/core/IconButton';
 import MenuIcon from '@material-ui/icons/Menu';
+import LogoIcon from '../../data/nplogo-freelogodesign.png'
 
 import Drawer from '@material-ui/core/Drawer';
 import Typography from '@material-ui/core/Typography'
@@ -101,10 +102,11 @@ const AppNavbar = () => {
           <IconButton edge="start" className={classes.menuButton} color="inherit" aria-label="menu" onClick={(e) => toggleDrawer()}>
             <MenuIcon />
           </IconButton>
+          <img style={{ width: '100px', height: '90px' }} src={LogoIcon} alt="Logo" />
           <Link href="/" variant="h5" color="inherit" className={classes.title}>
             Nam Phuong Market
           </Link>
-            <Fab variant="extended" onClick={e => window.scrollTo({ top: 0, behavior: 'smooth' })}>
+            <Fab variant="extended" onClick={e => window.scrollTo({ top: 0, behavior: 'smooth' })} style={{ backgroundColor: '#ffc107', color: 'white' }}>
               <NavigationIcon />
               Top
             </Fab>
