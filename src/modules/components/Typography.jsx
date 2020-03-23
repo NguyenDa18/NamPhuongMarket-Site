@@ -55,9 +55,7 @@ function Typography(props) {
       {children}
       {marked ? (
         <span
-          className={
-                        classes[`marked${capitalize(variant) + capitalize(marked)}`]
-                    }
+          className={classes[`marked${capitalize(variant) + capitalize(marked)}`]}
         />
       ) : null}
     </MuiTypography>
