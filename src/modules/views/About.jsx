@@ -76,7 +76,7 @@ export default function About() {
             <Typography variant="h5" >About Us</Typography>
           </Container>
           <Container maxWidth="md">
-            <Typography variant="h4" align="center" color="textPrimary" gutterBottom>
+            <Typography variant="h4" align="center" color="primary" gutterBottom>
               Established Since 1997
             </Typography>
             <Typography variant="h5" align="center" color="textSecondary" paragraph>
