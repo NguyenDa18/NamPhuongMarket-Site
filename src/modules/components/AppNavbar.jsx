@@ -27,6 +27,7 @@ const useStyles = makeStyles((theme) => ({
     width: 'auto',
     backgroundColor: '#0d47a1',
     color: 'white',
+    height: '100%'
   },
   menuButton: {
     marginRight: theme.spacing(2),
@@ -53,6 +54,9 @@ const AppNavbar = () => {
       onKeyDown={(e) => setOpen(false)}
     >
       <List>
+        <img style={{ width: '100px', height: '90px', 
+        marginLeft: 'auto', marginRight: 'auto', display: 'block' }} 
+        src={LogoIcon} alt="Logo" />
         <ListItem>
           <ListItemIcon><SentimentSatisfiedIcon /></ListItemIcon>
           <Link
@@ -114,7 +118,7 @@ const AppNavbar = () => {
             </Fab>
         </Toolbar>
       </AppBar>
-      <Drawer anchor="bottom" open={open} onClose={(e) => setOpen(false)}>
+      <Drawer anchor="left" open={open} onClose={(e) => setOpen(false)}>
         {drawerList()}
       </Drawer>
     </div>
