@@ -56,7 +56,7 @@ const ImageGallery = ({ photos, title }) => {
                 <Grid key={i} item xs={12} sm={6} md={3}>
                   <Card key={i} className={classes.card}>
                     <Zoom key={i}>
-                      <img className={classes.media} src={photo.photo} />
+                      <img className={classes.media} src={photo.photo} alt={photo.caption} />
                     </Zoom>
                     <CardContent className={classes.cardContent}>
                       <Typography gutterBottom variant="h5" component="h2">

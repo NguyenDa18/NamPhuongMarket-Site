@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link as RouterLink } from 'react-router-dom'
 import { makeStyles } from '@material-ui/core/styles';
 import AppBar from '@material-ui/core/AppBar';
 import Fab from '@material-ui/core/Fab';
@@ -39,15 +40,10 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-const navbarItems = {
-  'Grocery': '/grocery',
-  'Fresh Vegetables': '/vegetablesgallery',
-  'Fridge Products': '/fridgegallery'
-}
-
 const AppNavbar = () => {
   const [open, setOpen] = useState(false);
   const classes = useStyles();
+
 
   const drawerList = () => (
     <div
@@ -57,14 +53,14 @@ const AppNavbar = () => {
       onKeyDown={(e) => setOpen(false)}
     >
       <List>
-        {['Testimonials'].map((text, index) => (
-          <ListItem button key={text}>
-            <ListItemIcon><SentimentSatisfiedIcon /></ListItemIcon>
-            <Link href="/testimonials" variant="h5" color="inherit" style={{ textDecoration: 'none' }} noWrap>
-              {text}
-            </Link>
-          </ListItem>
-        ))}
+        <ListItem>
+          <ListItemIcon><SentimentSatisfiedIcon /></ListItemIcon>
+          <Link
+          component={RouterLink} to="/testimonials"
+          variant="h5" color="inherit" style={{ textDecoration: 'none' }} noWrap>
+            Testimonials
+          </Link>
+        </ListItem>
       </List>
       <Divider />
       <List>
@@ -73,19 +69,25 @@ const AppNavbar = () => {
         </ListItem>
         <ListItem button>
             <ListItemIcon><PhotoIcon /></ListItemIcon>
-            <Link href='/grocery' variant="h5" color="inherit" style={{ textDecoration: 'none' }} noWrap>
+            <Link
+            component={RouterLink} to="/grocery"
+            variant="h5" color="inherit" style={{ textDecoration: 'none' }} noWrap>
               Grocery
             </Link>
         </ListItem>
         <ListItem button>
             <ListItemIcon><PhotoIcon /></ListItemIcon>
-            <Link href='/vegetablesgallery' variant="h5" color="inherit" style={{ textDecoration: 'none' }} noWrap>
+            <Link
+            component={RouterLink} to="/vegetablesgallery"
+            variant="h5" color="inherit" style={{ textDecoration: 'none' }} noWrap>
               Fresh Vegetables
             </Link>
         </ListItem>
         <ListItem button>
             <ListItemIcon><PhotoIcon /></ListItemIcon>
-            <Link href='/fridgegallery' variant="h5" color="inherit" style={{ textDecoration: 'none' }} noWrap>
+            <Link
+            component={RouterLink} to="/fridgegallery"
+            variant="h5" color="inherit" style={{ textDecoration: 'none' }} noWrap>
               Fridge Products
             </Link>
         </ListItem>
@@ -103,7 +105,7 @@ const AppNavbar = () => {
             <MenuIcon />
           </IconButton>
           <img style={{ width: '100px', height: '90px' }} src={LogoIcon} alt="Logo" />
-          <Link href="/" variant="h5" color="inherit" className={classes.title}>
+          <Link component={RouterLink} to="/" variant="h5" color="inherit" className={classes.title}>
             Nam Phuong Market
           </Link>
             <Fab variant="extended" onClick={e => window.scrollTo({ top: 0, behavior: 'smooth' })} style={{ backgroundColor: '#ffc107', color: 'white' }}>

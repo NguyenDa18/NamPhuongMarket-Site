@@ -54,7 +54,7 @@ export default function Testimonials() {
       return abv
   }
 
-  const renderStars = (stars) => [...Array(stars).keys()].map(star => <StarIcon />)
+  const renderStars = (stars) => [...Array(stars).keys()].map((i, star) => <StarIcon key={i} />)
 
   let reviewData
   switch (expanded) {
