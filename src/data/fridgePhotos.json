@@ -1,46 +1,79 @@
 [
   {
-    "photo": "https://res.cloudinary.com/dnguyen/image/upload/q_50/v1573627529/namphuong/fridge/pork_display_n3cznp.jpg",
+    "src": "https://res.cloudinary.com/dnguyen/image/upload/q_50/v1573627529/namphuong/fridge/pork_display_n3cznp.jpg",
+    "thumbnail": "https://res.cloudinary.com/dnguyen/image/upload/c_thumb,w_200,g_face/v1573627529/namphuong/fridge/pork_display_n3cznp.jpg",
+    "thumbnailHeight": 350,
+    "thumbnailWidth": 500,
     "caption": "Great selection of pork"
   },
   {
-    "photo": "https://res.cloudinary.com/dnguyen/image/upload/q_50/v1570261841/namphuong/fridge/meats_nqm5l5.jpg",
+    "src": "https://res.cloudinary.com/dnguyen/image/upload/q_50/v1570261841/namphuong/fridge/meats_nqm5l5.jpg",
+    "thumbnail": "https://res.cloudinary.com/dnguyen/image/upload/c_thumb,w_200,g_face/v1570261841/namphuong/fridge/meats_nqm5l5.jpg",
+    "thumbnailHeight": 350,
+    "thumbnailWidth": 500,
     "caption": "Pork belly, pork butt, pork leg"
   },
   {
-    "photo": "https://res.cloudinary.com/dnguyen/image/upload/q_50/v1573627253/namphuong/fridge/bones_lasach_qww4y9.jpg",
+    "src": "https://res.cloudinary.com/dnguyen/image/upload/q_50/v1573627253/namphuong/fridge/bones_lasach_qww4y9.jpg",
+    "thumbnail": "https://res.cloudinary.com/dnguyen/image/upload/c_thumb,w_200,g_face/v1573627253/namphuong/fridge/bones_lasach_qww4y9.jpg",
+    "thumbnailHeight": 350,
+    "thumbnailWidth": 500,
     "caption": "Ox tail, beef omassum, beef bones"
   },
   {
-    "photo": "https://res.cloudinary.com/dnguyen/image/upload/q_50/v1575619168/namphuong/fridge/kimchis_ww8haz.jpg",
+    "src": "https://res.cloudinary.com/dnguyen/image/upload/q_50/v1575619168/namphuong/fridge/kimchis_ww8haz.jpg",
+    "thumbnail": "https://res.cloudinary.com/dnguyen/image/upload/c_thumb,w_200,g_face/v1575619168/namphuong/fridge/kimchis_ww8haz.jpg",
+    "thumbnailHeight": 350,
+    "thumbnailWidth": 500,
     "caption": "Quality kimchi and ginger"
   },
   {
-    "photo": "https://res.cloudinary.com/dnguyen/image/upload/q_50/v1570262082/namphuong/fridge/menlo_whulfv.jpg",
+    "src": "https://res.cloudinary.com/dnguyen/image/upload/q_50/v1570262234/namphuong/fridge/drinks_vqpk83.jpg",
+    "thumbnail": "https://res.cloudinary.com/dnguyen/image/upload/c_thumb,w_200,g_face/v1570262234/namphuong/fridge/drinks_vqpk83.jpg",
+    "thumbnailHeight": 350,
+    "thumbnailWidth": 300,
+    "caption": "Refreshing soda drinks"
+  },
+  {
+    "src": "https://res.cloudinary.com/dnguyen/image/upload/q_50/v1570262082/namphuong/fridge/menlo_whulfv.jpg",
+    "thumbnail": "https://res.cloudinary.com/dnguyen/image/upload/c_thumb,w_200,g_face/v1570262082/namphuong/fridge/menlo_whulfv.jpg",
+    "thumbnailHeight": 350,
+    "thumbnailWidth": 500,
     "caption": "Egg roll wrappers"
   },
   {
-    "photo": "https://res.cloudinary.com/dnguyen/image/upload/q_50/v1575870381/namphuong/fridge/misos_u8mvva.jpg",
+    "src": "https://res.cloudinary.com/dnguyen/image/upload/q_50/v1575870381/namphuong/fridge/misos_u8mvva.jpg",
+    "thumbnail": "https://res.cloudinary.com/dnguyen/image/upload/c_thumb,w_200,g_face/v1575870381/namphuong/fridge/misos_u8mvva.jpg",
+    "thumbnailHeight": 350,
+    "thumbnailWidth": 500,
     "caption": "Misos and Pho noodles"
   },
   {
-    "photo": "https://res.cloudinary.com/dnguyen/image/upload/q_50/v1573627323/namphuong/fridge/shrimp_mussels_ow22yk.jpg",
-    "caption": "Shrimp and mussels"
-  },
-  {
-    "photo": "https://res.cloudinary.com/dnguyen/image/upload/q_50/v1570261962/namphuong/fridge/bovien_jj10xe.jpg",
-    "caption": "Fish and beef balls"
-  },
-  {
-    "photo": "https://res.cloudinary.com/dnguyen/image/upload/q_50/v1570262160/namphuong/fridge/kafir_twl9wv.jpg",
-    "caption": "Kafir lime leaves and baby clams"
-  },
-  {
-    "photo": "https://res.cloudinary.com/dnguyen/image/upload/q_50/v1575619167/namphuong/fridge/quaileggs_btwsse.jpg",
+    "src": "https://res.cloudinary.com/dnguyen/image/upload/q_50/v1575619167/namphuong/fridge/quaileggs_btwsse.jpg",
+    "thumbnail": "https://res.cloudinary.com/dnguyen/image/upload/c_thumb,w_200,g_face/v1575619167/namphuong/fridge/quaileggs_btwsse.jpg",
+    "thumbnailHeight": 350,
+    "thumbnailWidth": 300,
     "caption": "Eggs and dried shrimp"
   },
   {
-    "photo": "https://res.cloudinary.com/dnguyen/image/upload/q_50/v1570262234/namphuong/fridge/drinks_vqpk83.jpg",
-    "caption": "Refreshing soda drinks"
+    "src": "https://res.cloudinary.com/dnguyen/image/upload/q_50/v1573627323/namphuong/fridge/shrimp_mussels_ow22yk.jpg",
+    "thumbnail": "https://res.cloudinary.com/dnguyen/image/upload/c_thumb,w_200,g_face/v1573627323/namphuong/fridge/shrimp_mussels_ow22yk.jpg",
+    "thumbnailHeight": 350,
+    "thumbnailWidth": 500,
+    "caption": "Shrimp and mussels"
+  },
+  {
+    "src": "https://res.cloudinary.com/dnguyen/image/upload/q_50/v1570261962/namphuong/fridge/bovien_jj10xe.jpg",
+    "thumbnail": "https://res.cloudinary.com/dnguyen/image/upload/c_thumb,w_200,g_face/v1570261962/namphuong/fridge/bovien_jj10xe.jpg",
+    "thumbnailHeight": 350,
+    "thumbnailWidth": 500,
+    "caption": "Fish and beef balls"
+  },
+  {
+    "src": "https://res.cloudinary.com/dnguyen/image/upload/q_50/v1570262160/namphuong/fridge/kafir_twl9wv.jpg",
+    "thumbnail": "https://res.cloudinary.com/dnguyen/image/upload/c_thumb,w_200,g_face/v1570262160/namphuong/fridge/kafir_twl9wv.jpg",
+    "thumbnailHeight": 350,
+    "thumbnailWidth": 300,
+    "caption": "Kafir lime leaves and baby clams"
   }
 ]
