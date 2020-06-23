@@ -1,19 +1,12 @@
 import React from 'react';
 import Container from '@material-ui/core/Container';
-import { makeStyles } from '@material-ui/core/styles'
 import Grid from '@material-ui/core/Grid';
 import Typography from '@material-ui/core/Typography';
 import Link from '@material-ui/core/Link';
 
 const Footer = () => {
-  const classes = makeStyles(theme => {
-    footer: {
-      padding: theme.spacing(6)
-    }
-  })
-
   return (
-    <footer className={classes.footer}>
+    <footer>
       <Container>
         <Grid container justify="center">
           <Grid item xs={12}>
