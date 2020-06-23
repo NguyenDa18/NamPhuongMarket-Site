@@ -1,5 +1,7 @@
 import React from 'react';
+import ReactGA from 'react-ga'
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import { createBrowserHistory } from 'history'
 
 // components
 import About from './modules/views/About';
@@ -13,9 +15,20 @@ import Testimonials from './modules/views/Testimonials'
 import AppNavbar from './modules/components/AppNavbar';
 import HeroImage from './modules/components/HeroImage';
 
+const trackingID = "UA-158716028-2"
+ReactGA.initialize(trackingID)
+
+const history = createBrowserHistory()
+
+// Initialize google analytics page view tracking
+history.listen(location => {
+  ReactGA.set({ page: location.pathname }); // Update the user's current page
+  ReactGA.pageview(location.pathname); // Record a pageview for the given page
+});
+
 const App = () => (
       <div className="App">
-        <Router>
+        <Router history={history}>
           <AppNavbar />
           <HeroImage />
           <Switch>
