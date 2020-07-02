@@ -19,6 +19,8 @@ import ListItemIcon from '@material-ui/core/ListItemIcon';
 import SentimentSatisfiedIcon from '@material-ui/icons/SentimentSatisfied'
 import PhotoIcon from '@material-ui/icons/Photo'
 
+import { handleLinkAnalytics } from '../../utils/analytics'
+
 const useStyles = makeStyles((theme) => ({
   root: {
     flexGrow: 1,
@@ -60,7 +62,9 @@ const AppNavbar = () => {
         <ListItem>
           <ListItemIcon><SentimentSatisfiedIcon /></ListItemIcon>
           <Link
-          component={RouterLink} to="/testimonials"
+          onClick={handleLinkAnalytics('/testimonials')}
+          component={RouterLink} 
+          to="/testimonials"
           variant="h5" color="inherit" style={{ textDecoration: 'none' }} noWrap>
             Testimonials
           </Link>
@@ -74,6 +78,7 @@ const AppNavbar = () => {
         <ListItem button>
             <ListItemIcon><PhotoIcon /></ListItemIcon>
             <Link
+            onClick={handleLinkAnalytics('/grocery')}
             component={RouterLink} to="/grocery"
             variant="h5" color="inherit" style={{ textDecoration: 'none' }} noWrap>
               Grocery
@@ -82,6 +87,7 @@ const AppNavbar = () => {
         <ListItem button>
             <ListItemIcon><PhotoIcon /></ListItemIcon>
             <Link
+            onClick={handleLinkAnalytics('/vegetablesgallery')}
             component={RouterLink} to="/vegetablesgallery"
             variant="h5" color="inherit" style={{ textDecoration: 'none' }} noWrap>
               Fresh Vegetables
@@ -90,6 +96,7 @@ const AppNavbar = () => {
         <ListItem button>
             <ListItemIcon><PhotoIcon /></ListItemIcon>
             <Link
+            onClick={handleLinkAnalytics('/fridgegallery')}
             component={RouterLink} to="/fridgegallery"
             variant="h5" color="inherit" style={{ textDecoration: 'none' }} noWrap>
               Fridge Products
