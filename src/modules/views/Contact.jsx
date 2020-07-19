@@ -3,12 +3,17 @@ import { makeStyles } from '@material-ui/core/styles'
 import TextField from '@material-ui/core/TextField'
 import Button from '@material-ui/core/Button';
 import Container from '@material-ui/core/Container';
+import Typography from '@material-ui/core/Typography';
 
 import { useForm } from 'react-hook-form'
 
 const useStyles = makeStyles(theme => ({
+    container: {
+      paddingTop: theme.spacing(8),
+      paddingBottom: theme.spacing(8),
+    },
     paper: {
-      marginTop: theme.spacing(8),
+      marginTop: theme.spacing(5),
       display: 'flex',
       flexDirection: 'column',
       alignItems: 'center',
@@ -24,28 +29,31 @@ const useStyles = makeStyles(theme => ({
     submit: {
       margin: theme.spacing(3, 0, 2),
     },
-  }));
+}));
 
-  const encode = (data) => {
-    return Object.keys(data)
-        .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
-        .join("&");
-  }
+const encode = (data) => {
+  return Object.keys(data)
+      .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
+      .join("&");
+}
 
 const Contact = () => {
-    const { handleSubmit, register, errors } = useForm()
+    const { handleSubmit, register, errors, reset } = useForm()
     const onSubmit = values => {
       fetch("/", {
         method: "POST",
         headers: { "Content-Type": "application/x-www-form-urlencoded" },
         body: encode({ "form-name": "contact", ...values })
         })
-        .then(() => alert("Success!"))
+        .then(() => reset())
         .catch(error => alert(error));
     }
     const classes = useStyles();
     return (
-        <Container component="main" maxWidth="md">
+        <Container className={classes.container} component="main" maxWidth="md">
+        <Typography component="h1" variant="h2" align="center" color="textPrimary" gutterBottom>
+          Contact
+        </Typography>
         <div className={classes.paper}>
           <form name="contact" className={classes.form} noValidate onSubmit={handleSubmit(onSubmit)} data-netlify="true">
             <input type="hidden" name="form-name" value="contact" />
