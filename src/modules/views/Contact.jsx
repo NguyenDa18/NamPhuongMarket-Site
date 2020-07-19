@@ -28,12 +28,20 @@ const useStyles = makeStyles(theme => ({
 
 const Contact = () => {
     const { handleSubmit, register, errors } = useForm()
-    const onSubmit = values => console.log(values)
+    const onSubmit = values => {
+      fetch("/", {
+        method: "POST",
+        headers: { "Content-Type": "application/x-www-form-urlencoded" },
+        body: encode({ "form-name": "contact", values })
+        })
+        .then(() => alert("Success!"))
+        .catch(error => alert(error));
+    }
     const classes = useStyles();
     return (
         <Container component="main" maxWidth="md">
         <div className={classes.paper}>
-          <form name="contact" className={classes.form} noValidate onSubmit={handleSubmit(onSubmit)}>
+          <form name="contact" className={classes.form} noValidate onSubmit={handleSubmit(onSubmit)} method="POST" data-netlify="true">
             <input type="hidden" name="form-name" value="contact" />
             <TextField
               variant="outlined"
