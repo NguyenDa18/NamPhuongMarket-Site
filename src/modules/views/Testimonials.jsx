@@ -20,6 +20,10 @@ import facebookReviews from '../../data/facebookReviews.json'
 import yelpReviews from '../../data/yelpReviews.json'
 
 const useStyles = makeStyles((theme) => ({
+  container: {
+    paddingTop: theme.spacing(8),
+    paddingBottom: theme.spacing(8),
+  },
   media: {
     height: 0,
     paddingTop: '56.25%', // 16:9
@@ -77,7 +81,10 @@ export default function Testimonials() {
   }
 
   return (
-      <Container component="main" maxWidth="lg">
+      <Container className={classes.container} component="main" maxWidth="lg">
+            <Typography component="h1" variant="h2" align="center" color="textPrimary" gutterBottom>
+              Testimonials
+            </Typography>
             <Paper square className={classes.root}>
               <Tabs
                 value={expanded}

@@ -27,6 +27,7 @@ const useStyles = makeStyles((theme) => ({
   list: {
     width: 'auto',
     backgroundColor: '#0d47a1',
+    background: 'linear-gradient(45deg, #0d47a1 40%, #21CBF3 90%)',
     color: 'white',
     height: '100%'
   },
@@ -34,7 +35,11 @@ const useStyles = makeStyles((theme) => ({
     marginRight: theme.spacing(2),
   },
   navbar: {
-    backgroundColor: '#0d47a1'
+  backgroundColor: '#0d47a1',
+  background: 'linear-gradient(45deg, #0d47a1 10%, #21CBF3 90%)',
+  border: 0,
+  borderRadius: 3,
+  boxShadow: '0 3px 5px 2px rgba(33, 203, 243, .3)',
   },
   title: {
     flexGrow: 1,
