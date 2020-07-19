@@ -27,7 +27,7 @@ const useStyles = makeStyles((theme) => ({
   list: {
     width: 'auto',
     backgroundColor: '#0d47a1',
-    background: 'linear-gradient(45deg, #0d47a1 40%, #21CBF3 90%)',
+    background: 'linear-gradient(45deg, #0d47a1 60%, #21CBF3 90%)',
     color: 'white',
     height: '100%'
   },

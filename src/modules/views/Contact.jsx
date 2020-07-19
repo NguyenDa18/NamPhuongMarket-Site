@@ -52,7 +52,7 @@ const Contact = () => {
     return (
         <Container className={classes.container} component="main" maxWidth="md">
         <Typography component="h1" variant="h2" align="center" color="textPrimary" gutterBottom>
-          Contact
+          Contact Us
         </Typography>
         <div className={classes.paper}>
           <form name="contact" className={classes.form} noValidate onSubmit={handleSubmit(onSubmit)} data-netlify="true">
