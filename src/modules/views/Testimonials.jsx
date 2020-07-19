@@ -34,9 +34,13 @@ const useStyles = makeStyles((theme) => ({
   avatar: {
     backgroundColor: red[500],
   },
+  headerAvatar: {
+    margin: theme.spacing(1),
+    backgroundColor: theme.palette.primary.main,
+  },
   card: {
-    marginTop: '30px',
-    marginBottom: '30px'
+  marginTop: '30px',
+  marginBottom: '30px'
   }
 }));
 
@@ -73,7 +77,7 @@ export default function Testimonials() {
   }
 
   return (
-      <Container>
+      <Container component="main" maxWidth="lg">
             <Paper square className={classes.root}>
               <Tabs
                 value={expanded}

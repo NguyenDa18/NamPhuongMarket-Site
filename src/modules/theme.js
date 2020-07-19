@@ -1,5 +1,5 @@
 import { createMuiTheme } from '@material-ui/core/styles';
-import { grey, red } from '@material-ui/core/colors';
+import { red } from '@material-ui/core/colors';
 
 const rawTheme = createMuiTheme({
   palette: {
@@ -28,12 +28,5 @@ const rawTheme = createMuiTheme({
     fontFamilySecondary: "'Roboto Condensed', sans-serif",
   },
 });
-
-const fontHeader = {
-  color: rawTheme.palette.text.primary,
-  fontWeight: rawTheme.typography.fontWeightMedium,
-  fontFamily: rawTheme.typography.fontFamilySecondary,
-  textTransform: 'uppercase',
-};
 
 export default rawTheme;

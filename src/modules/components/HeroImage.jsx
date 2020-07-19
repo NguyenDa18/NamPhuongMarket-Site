@@ -11,7 +11,7 @@ const useStyles = makeStyles((theme) => ({
   heroButtons: {
     padding: theme.spacing(2, 0, 0),
   },
-  photoButton: {
+  phoneButton: {
     backgroundColor: '#ffc107'
   },
   fbButton: {
@@ -31,7 +31,7 @@ const HeroImage = () => {
            <div className={classes.heroButtons}>
             <Grid container spacing={3} justify="center">
               <Grid item>
-                <Button variant="contained" className={classes.photoButton}>
+                <Button variant="contained" className={classes.phoneButton}>
                 <Link
                 onClick={handleButtonAnalytics('phone')}
                 style={{ textDecoration: 'none', color: 'black' }} 

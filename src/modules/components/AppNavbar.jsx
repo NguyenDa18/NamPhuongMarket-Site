@@ -2,8 +2,6 @@ import React, { useState } from 'react';
 import { Link as RouterLink } from 'react-router-dom'
 import { makeStyles } from '@material-ui/core/styles';
 import AppBar from '@material-ui/core/AppBar';
-import Fab from '@material-ui/core/Fab';
-import NavigationIcon from '@material-ui/icons/Navigation';
 import Link from '@material-ui/core/Link';
 import Toolbar from '@material-ui/core/Toolbar';
 import IconButton from '@material-ui/core/IconButton';
@@ -18,6 +16,7 @@ import ListItem from '@material-ui/core/ListItem';
 import ListItemIcon from '@material-ui/core/ListItemIcon';
 import SentimentSatisfiedIcon from '@material-ui/icons/SentimentSatisfied'
 import PhotoIcon from '@material-ui/icons/Photo'
+import ChatBubbleOutlineIcon from '@material-ui/icons/ChatBubbleOutline'
 
 import { handleLinkAnalytics } from '../../utils/analytics'
 
@@ -47,7 +46,6 @@ const AppNavbar = () => {
   const [open, setOpen] = useState(false);
   const classes = useStyles();
 
-
   const drawerList = () => (
     <div
       className={classes.list}
@@ -67,6 +65,16 @@ const AppNavbar = () => {
           to="/testimonials"
           variant="h5" color="inherit" style={{ textDecoration: 'none' }} noWrap>
             Testimonials
+          </Link>
+        </ListItem>
+        <ListItem>
+          <ListItemIcon><ChatBubbleOutlineIcon /></ListItemIcon>
+          <Link
+          onClick={handleLinkAnalytics('/contact')}
+          component={RouterLink} 
+          to="/contact"
+          variant="h5" color="inherit" style={{ textDecoration: 'none' }} noWrap>
+            Contact Us
           </Link>
         </ListItem>
       </List>
@@ -119,10 +127,6 @@ const AppNavbar = () => {
           <Link component={RouterLink} to="/" variant="h5" color="inherit" className={classes.title}>
             Nam Phuong Market
           </Link>
-            <Fab variant="extended" onClick={e => window.scrollTo({ top: 0, behavior: 'smooth' })} style={{ backgroundColor: '#ffc107', color: 'white' }}>
-              <NavigationIcon />
-              Top
-            </Fab>
         </Toolbar>
       </AppBar>
       <Drawer anchor="left" open={open} onClose={(e) => setOpen(false)}>
