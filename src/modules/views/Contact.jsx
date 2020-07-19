@@ -38,7 +38,7 @@ const Contact = () => {
       fetch("/", {
         method: "POST",
         headers: { "Content-Type": "application/x-www-form-urlencoded" },
-        body: encode({ "form-name": "contact", values })
+        body: encode({ "form-name": "contact", ...values })
         })
         .then(() => alert("Success!"))
         .catch(error => alert(error));
@@ -47,7 +47,7 @@ const Contact = () => {
     return (
         <Container component="main" maxWidth="md">
         <div className={classes.paper}>
-          <form name="contact" className={classes.form} noValidate onSubmit={handleSubmit(onSubmit)} method="POST" data-netlify="true">
+          <form name="contact" className={classes.form} noValidate onSubmit={handleSubmit(onSubmit)} data-netlify="true">
             <input type="hidden" name="form-name" value="contact" />
             <TextField
               variant="outlined"
