@@ -7,6 +7,7 @@ import Toolbar from '@material-ui/core/Toolbar';
 import IconButton from '@material-ui/core/IconButton';
 import MenuIcon from '@material-ui/icons/Menu';
 import LogoIcon from '../../data/nplogo-freelogodesign.png'
+import HomeOutlinedIcon from '@material-ui/icons/HomeOutlined'
 
 import Drawer from '@material-ui/core/Drawer';
 import Typography from '@material-ui/core/Typography'
@@ -62,6 +63,16 @@ const AppNavbar = () => {
         <img style={{ width: '100px', height: '90px', 
         marginLeft: 'auto', marginRight: 'auto', display: 'block' }} 
         src={LogoIcon} alt="Logo" />
+        <ListItem>
+          <ListItemIcon><HomeOutlinedIcon /></ListItemIcon>
+          <Link
+          onClick={handleLinkAnalytics('/')}
+          component={RouterLink} 
+          to="/"
+          variant="h5" color="inherit" style={{ textDecoration: 'none' }} noWrap>
+            Home
+          </Link>
+        </ListItem>
         <ListItem>
           <ListItemIcon><SentimentSatisfiedIcon /></ListItemIcon>
           <Link
