@@ -1,32 +1,30 @@
 import React from 'react';
-import Snackbar from '@material-ui/core/Snackbar';
-import IconButton from '@material-ui/core/IconButton';
-import CloseIcon from '@material-ui/icons/Close';
 
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 const AppAlert = () => {
-  const [open, setOpen] = React.useState(true);
-
+  setTimeout(() => {
+    toast.error('😥 We will be closed tomorrow, 9/15.')
+  }, 2000);
+  setTimeout(() => {
+    toast.dark('😷 Face masks are required in-store.')
+  }, 1000);
+  toast('🛒 We are still open during COVID-19! Please stay safe.')
   return (
-    <div>
-      <Snackbar
-        anchorOrigin={{
-          vertical: 'bottom',
-          horizontal: 'left',
-        }}
-        open={open}
-        autoHideDuration={4000}
-        onClose={e => setOpen(false)}
-        message="We are still open during COVID-19! Please stay safe."
-        action={
-          <React.Fragment>
-            <IconButton size="small" aria-label="close" color="secondary" onClick={e => setOpen(false)}>
-              <CloseIcon fontSize="small" />
-            </IconButton>
-          </React.Fragment>
-        }
-      />
-    </div>
-  );
+    <>
+    <ToastContainer
+    position="top-right"
+    autoClose={5000}
+    hideProgressBar={false}
+    closeOnClick
+    rtl={false}
+    pauseOnFocusLoss
+    draggable
+    pauseOnHover
+    />
+    <ToastContainer />
+    </>
+  )
 }
 
 export default AppAlert

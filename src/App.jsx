@@ -15,9 +15,9 @@ const VegGallery = lazy(() => import('./modules/views/VegGallery'))
 const FridgeProductsGallery = lazy(() => import('./modules/views/FridgeProductsGallery'));
 const Testimonials = lazy(() => import('./modules/views/Testimonials'));
 
-const trackingID = "UA-158716028-2"
+const trackingID = "UA-158716028-2";
 
-const history = createBrowserHistory()
+const history = createBrowserHistory();
 
 const App = () => {
   useEffect(() => {
