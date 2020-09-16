@@ -17,7 +17,7 @@ const Footer = () => {
           <Grid item xs={12}>
             <Typography variant="body2" color="textSecondary" align="center">
                 Copyright © {new Date().getFullYear()} &nbsp; Website Design by &nbsp;
-              <Link color="inherit" href="https://danh-was-here.netlify.com" target="_blank">
+              <Link color="inherit" href="https://danhwashere.com" target="_blank">
                     Danh Nguyen &nbsp;
               </Link>
             </Typography>
