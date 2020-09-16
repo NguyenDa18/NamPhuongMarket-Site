@@ -4,9 +4,6 @@ import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 const AppAlert = () => {
   setTimeout(() => {
-    toast.error('😥 We are closed on 9/15.')
-  }, 2000);
-  setTimeout(() => {
     toast.dark('😷 Face masks are required in-store.')
   }, 1000);
   toast('🛒 We are still open during COVID-19! Please stay safe.')
