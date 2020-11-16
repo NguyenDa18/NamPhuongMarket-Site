@@ -1,4 +1,5 @@
 import React, { useEffect, Suspense, lazy } from 'react';
+import { toast } from 'react-toastify'
 import ReactGA from 'react-ga';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import { createBrowserHistory } from 'history';
@@ -16,12 +17,22 @@ const FridgeProductsGallery = lazy(() => import('./modules/views/FridgeProductsG
 const Testimonials = lazy(() => import('./modules/views/Testimonials'));
 
 const trackingID = "UA-158716028-2";
+ReactGA.initialize(trackingID);
 
 const history = createBrowserHistory();
 
+toast.configure({
+  position: "top-right",
+  autoClose: 5000,
+  hideProgressBar: false,
+  closeOnClick: true,
+  rtl: false,
+  pauseOnFocusLoss: true,
+  draggable: true,
+  pauseOnHover: true
+})
 const App = () => {
   useEffect(() => {
-    ReactGA.initialize(trackingID)
     ReactGA.pageview(`${window.location.pathname}${window.location.search}`); // Record a pageview for the given page
   }, [])
 

@@ -14,7 +14,6 @@
     "react-ga": "^3.0.0",
     "react-grid-gallery": "^0.5.5",
     "react-hook-form": "^6.0.7",
-    "react-iframe": "^1.8.0",
     "react-router-dom": "^5.1.2",
     "react-scripts": "^3.4.1",
     "react-toastify": "^6.0.8"

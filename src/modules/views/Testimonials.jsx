@@ -6,7 +6,7 @@ import CardHeader from '@material-ui/core/CardHeader';
 import CardContent from '@material-ui/core/CardContent';
 import Avatar from '@material-ui/core/Avatar';
 import Typography from '@material-ui/core/Typography';
-import { red } from '@material-ui/core/colors';
+import { yellow } from '@material-ui/core/colors';
 import Paper from '@material-ui/core/Paper';
 import Tabs from '@material-ui/core/Tabs';
 import Tab from '@material-ui/core/Tab';
@@ -36,7 +36,7 @@ const useStyles = makeStyles((theme) => ({
     }),
   },
   avatar: {
-    backgroundColor: red[500],
+    backgroundColor: yellow[700],
   },
   headerAvatar: {
     margin: theme.spacing(1),
