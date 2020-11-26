@@ -33,6 +33,7 @@ toast.configure({
 })
 const App = () => {
   useEffect(() => {
+    ReactGA.initialize(trackingID);
     ReactGA.pageview(`${window.location.pathname}${window.location.search}`); // Record a pageview for the given page
   }, [])
 
