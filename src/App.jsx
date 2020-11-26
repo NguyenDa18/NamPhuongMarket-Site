@@ -17,7 +17,6 @@ const FridgeProductsGallery = lazy(() => import('./modules/views/FridgeProductsG
 const Testimonials = lazy(() => import('./modules/views/Testimonials'));
 
 const trackingID = "UA-158716028-2";
-ReactGA.initialize(trackingID);
 
 const history = createBrowserHistory();
 
