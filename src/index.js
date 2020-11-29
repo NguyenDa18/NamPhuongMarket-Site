@@ -12,7 +12,7 @@ ReactGA.initialize(trackingID, {
     siteSpeedSampleRate: 100
   }
 });
-ReactGA.pageview(`${window.location.pathname}${window.location.search}`); // Record a pageview for the given page
+// ReactGA.pageview(`${window.location.pathname}${window.location.search}`); // Record a pageview for the given page
 
 ReactDOM.render(<App />, document.getElementById('root'));
 
