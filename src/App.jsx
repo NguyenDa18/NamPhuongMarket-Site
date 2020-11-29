@@ -1,7 +1,7 @@
 import React, { useEffect, Suspense, lazy } from 'react';
 import { toast } from 'react-toastify'
 import ReactGA from 'react-ga';
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Switch, withRouter } from 'react-router-dom';
 import { createBrowserHistory } from 'history';
 import Footer from './modules/components/Footer';
 
@@ -16,8 +16,6 @@ const VegGallery = lazy(() => import('./modules/views/VegGallery'))
 const FridgeProductsGallery = lazy(() => import('./modules/views/FridgeProductsGallery'));
 const Testimonials = lazy(() => import('./modules/views/Testimonials'));
 
-const trackingID = "UA-158716028-2";
-
 const history = createBrowserHistory();
 
 toast.configure({
@@ -31,11 +29,6 @@ toast.configure({
   pauseOnHover: true
 })
 const App = () => {
-  useEffect(() => {
-    ReactGA.initialize(trackingID);
-    ReactGA.pageview(`${window.location.pathname}${window.location.search}`); // Record a pageview for the given page
-  }, [])
-
   return  (
     <div className="App">
       <Router history={history}>
@@ -57,4 +50,4 @@ const App = () => {
 )
 }
 
-export default App;
+export default withRouter(App);

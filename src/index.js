@@ -1,8 +1,18 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import ReactGA from 'react-ga';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 import './index.css';
+
+const trackingID = "UA-158716028-2";
+ReactGA.initialize(trackingID, {
+  titleCase: false,
+  gaOptions: {
+    siteSpeedSampleRate: 100
+  }
+});
+ReactGA.pageview(`${window.location.pathname}${window.location.search}`); // Record a pageview for the given page
 
 ReactDOM.render(<App />, document.getElementById('root'));
 
