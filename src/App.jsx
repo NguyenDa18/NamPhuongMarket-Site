@@ -1,6 +1,5 @@
-import React, { useEffect, Suspense, lazy } from 'react';
+import React, {  Suspense, lazy } from 'react';
 import { toast } from 'react-toastify'
-import ReactGA from 'react-ga';
 import { BrowserRouter as Router, Route, Switch, withRouter } from 'react-router-dom';
 import { createBrowserHistory } from 'history';
 import Footer from './modules/components/Footer';
