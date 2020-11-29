@@ -1,6 +1,6 @@
 import React, {  Suspense, lazy } from 'react';
 import { toast } from 'react-toastify'
-import { BrowserRouter as Router, Route, Switch, withRouter } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import { createBrowserHistory } from 'history';
 import Footer from './modules/components/Footer';
 
@@ -49,4 +49,4 @@ const App = () => {
 )
 }
 
-export default withRouter(App);
+export default App;
