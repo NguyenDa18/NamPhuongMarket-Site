@@ -1,19 +1,19 @@
-import React from 'react';
-import { ThemeProvider } from '@material-ui/styles';
-import theme from './theme';
+import React from 'react'
+import { ThemeProvider } from '@material-ui/styles'
+import theme from './theme'
 
 const withRoot = (Component) => {
-  function WithRoot(props) {
+  function WithRoot (props) {
     return (
       <ThemeProvider theme={theme}>
         {/* CssBaseline kickstart an elegant, consistent, and simple baseline to build upon. */}
         {/* <CssBaseline /> */}
         <Component {...props} />
       </ThemeProvider>
-    );
+    )
   }
 
-  return WithRoot;
-};
+  return WithRoot
+}
 
-export default withRoot;
+export default withRoot
