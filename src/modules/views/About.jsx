@@ -56,7 +56,7 @@ export default function About () {
                     <AccessTimeIcon />
                   </Avatar>
                 </ListItemAvatar>
-                <ListItemText primary='Open Everyday' secondary='10 : 30 AM - 6 : 00 PM' />
+                <ListItemText primary='Open Everyday' secondary='10 : 30 AM - 5 : 00 PM' />
               </ListItem>
               <ListItem>
                 <ListItemAvatar>
