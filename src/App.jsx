@@ -15,6 +15,7 @@ const PhotoGallery = lazy(() => import('./modules/views/PhotoGallery'))
 const VegGallery = lazy(() => import('./modules/views/VegGallery'))
 const FridgeProductsGallery = lazy(() => import('./modules/views/FridgeProductsGallery'))
 const Testimonials = lazy(() => import('./modules/views/Testimonials'))
+const NotFound = lazy(() => import('./modules/views/NotFound'))
 
 const history = createBrowserHistory()
 
@@ -42,6 +43,7 @@ const App = () => {
             <Route exact path='/grocery' component={PhotoGallery} />
             <Route exact path='/vegetablesgallery' component={VegGallery} />
             <Route exact path='/fridgegallery' component={FridgeProductsGallery} />
+            <Route component={NotFound}/>
           </Switch>
         </Suspense>
         <Footer />
