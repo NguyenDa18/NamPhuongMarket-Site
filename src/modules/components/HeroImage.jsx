@@ -26,7 +26,7 @@ const HeroImage = () => {
   return (
     <>
       <header className='App-header' />
-      <Container maxWidth='md'>
+      <Container maxWidth='md' style={{ paddingBottom: '20px' }}>
         <div className={classes.heroButtons}>
           <Grid container spacing={3} justify='center'>
             <Grid item>

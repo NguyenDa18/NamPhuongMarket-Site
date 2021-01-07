@@ -70,7 +70,7 @@ const AppNavbar = () => {
           }}
           src={LogoIcon} alt='Logo'
         />
-        <ListItem>
+        <ListItem button>
           <ListItemIcon><HomeOutlinedIcon /></ListItemIcon>
           <Link
             onClick={handleLinkAnalytics('/')}
@@ -81,7 +81,7 @@ const AppNavbar = () => {
             Home
           </Link>
         </ListItem>
-        <ListItem>
+        <ListItem button>
           <ListItemIcon><SentimentSatisfiedIcon /></ListItemIcon>
           <Link
             onClick={handleLinkAnalytics('/testimonials')}
@@ -92,7 +92,7 @@ const AppNavbar = () => {
             Testimonials
           </Link>
         </ListItem>
-        <ListItem>
+        <ListItem button>
           <ListItemIcon><ChatBubbleOutlineIcon /></ListItemIcon>
           <Link
             onClick={handleLinkAnalytics('/contact')}
@@ -116,7 +116,7 @@ const AppNavbar = () => {
             component={RouterLink} to='/precautions'
             variant='h5' color='inherit' style={{ textDecoration: 'none' }} noWrap
           >
-            Health/Safety Measures
+            Health & Safety Measures
           </Link>
         </ListItem>
         <ListItem button>

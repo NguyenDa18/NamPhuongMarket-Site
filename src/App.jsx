@@ -1,6 +1,7 @@
 import React, { Suspense, lazy } from 'react'
 import { toast } from 'react-toastify'
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
+import LinearProgress from '@material-ui/core/LinearProgress'
 import { createBrowserHistory } from 'history'
 import Footer from './modules/components/Footer'
 
@@ -34,7 +35,7 @@ const App = () => {
       <Router history={history}>
         <AppNavbar />
         <HeroImage />
-        <Suspense fallback={<div>Loading...</div>}>
+        <Suspense fallback={<LinearProgress style={{ padding: '10px' }} color="secondary" />}>
           <Switch>
             <Route exact path='/' component={About} />
             <Route exact path='/contact' component={Contact} />
