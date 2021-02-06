@@ -122,6 +122,16 @@ const AppNavbar = () => {
         <ListItem button>
           <ListItemIcon><PhotoIcon /></ListItemIcon>
           <Link
+            onClick={handleLinkAnalytics('/nonfoods')}
+            component={RouterLink} to='/nonfoods'
+            variant='h5' color='inherit' style={{ textDecoration: 'none' }} noWrap
+          >
+            Kitchen Supplies
+          </Link>
+        </ListItem>
+        <ListItem button>
+          <ListItemIcon><PhotoIcon /></ListItemIcon>
+          <Link
             onClick={handleLinkAnalytics('/vegetablesgallery')}
             component={RouterLink} to='/vegetablesgallery'
             variant='h5' color='inherit' style={{ textDecoration: 'none' }} noWrap
