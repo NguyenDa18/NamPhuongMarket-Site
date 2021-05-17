@@ -27,8 +27,8 @@ ReactGA.initialize(trackingID, {
     siteSpeedSampleRate: 100,
   },
 });
-ReactGA.set({ page: location.pathname })
-ReactGA.pageview(location.pathname)
+ReactGA.set({ page: window.location.pathname })
+ReactGA.pageview(window.location.pathname + window.location.search)
 
 toast.configure({
   position: "top-right",
