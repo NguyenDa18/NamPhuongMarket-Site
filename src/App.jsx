@@ -3,7 +3,6 @@ import ReactGA from "react-ga";
 import { toast } from "react-toastify";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import LinearProgress from "@material-ui/core/LinearProgress";
-import { createBrowserHistory } from "history";
 import Footer from "./modules/components/Footer";
 
 import AppNavbar from "./modules/components/AppNavbar";
@@ -21,19 +20,15 @@ const FridgeProductsGallery = lazy(() =>
 const Testimonials = lazy(() => import("./modules/views/Testimonials"));
 const NotFound = lazy(() => import("./modules/views/NotFound"));
 
-const history = createBrowserHistory();
-
 const trackingID = "UA-158716028-2";
-history.listen((location) => {
-  ReactGA.initialize(trackingID, {
-    titleCase: false,
-    gaOptions: {
-      siteSpeedSampleRate: 100,
-    },
-  });
-  ReactGA.set({ page: location.pathname })
-  ReactGA.pageview(location.pathname)
+ReactGA.initialize(trackingID, {
+  titleCase: false,
+  gaOptions: {
+    siteSpeedSampleRate: 100,
+  },
 });
+ReactGA.set({ page: location.pathname })
+ReactGA.pageview(location.pathname)
 
 toast.configure({
   position: "top-right",
@@ -48,7 +43,7 @@ toast.configure({
 const App = () => {
   return (
     <div className="App">
-      <Router history={history}>
+      <Router>
         <AppNavbar />
         <HeroImage />
         <Suspense
